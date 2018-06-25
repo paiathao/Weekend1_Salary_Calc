@@ -25,8 +25,6 @@ let employees = [     // object worker = {name,last,id,title,annualSay}
 $(document).ready(readyNow);
 
 function readyNow() {
-
-    let totalMonthly = 0;
     addClickHandlers();
     setTotalMonthly();
     for (let employ of employees) {
@@ -106,9 +104,10 @@ function readyNow() {
 
     //access elements in array, if elements is an object, access key
     function setTotalMonthly() {
+        let totalMonthly = 0;
         for (let i = 0; i < employees.length; i++) {   // looping through the array
             //employee[i] == worker
-            //employee[i].anualSay == worker.anualSal
+            //employee[i].anualSal == worker.anualSal
             totalMonthly += employees[i].annualSal / 12 // accessing the object annualSal from employees array and adding it to totalMonthly    
         }
 

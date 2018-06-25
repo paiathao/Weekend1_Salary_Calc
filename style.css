@@ -2,6 +2,14 @@ body {
     font-family: Tahoma, sans-serif;
   }
   
+h1 {
+    height: 60px;
+    background-color: lightgray;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
   table, td {
     border: 1px solid gray;
   }
@@ -13,6 +21,6 @@ body {
   }
   
   th {
-    background-color: lightblue;
+    background-color: pink;
   }
   
